@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+    <style>
+        /*修饰logo图片*/
+        .my-logo{
+            display: inline-block;
+            width:63px;
+            height:42px;
+            background: url('img/hdr-spr.png') 0 -512px no-repeat;
+            margin-top: 3px;
+        }
+        body{
+            margin-top:50px;
+        }
+        .mymain{
+            background: #0062a9;
+            color:#fff;
+        }
+      .navbar>.container>.collapse>.nav li a{
+            color:#fff;
+        }
+        .dropdown-menu{
+            background:#0062a9;
+        }
+        img{width:100%;}
+        .list-group-item{
+            margin-bottom: -1px;
+             background-color: #0062a9;
+            border: 1px solid #0062a9;
+        }
+        .col-xs-4>img{
+            margin-top:50px;
+        }
+        .my-caption{
+            position: absolute;
+            transition: all 0.3s linear;
+            overflow: hidden;
+            text-align: center;
+            width: 100%;
+            background: black;
+            opacity: .7;
+        }
+
+        .row{
+            overflow:hidden;
+        }
+        .mybox{
+            overflow: hidden;
+            padding: 0;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<!--导航-->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="" class="navbar-brand my-logo"></a>
+            <a href="#d1" class="navbar-toggle" data-toggle="collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="d1">
+            <ul class="nav navbar-nav">
+                <li><a href="#">首页</a></li>
+                <li class="active"><a href="#">新闻</a></li>
+                <li class="dropdown"><a href="#" data-toggle="dropdown">菜单</a>
+                   <ul class="dropdown-menu">
+                       <li><a href="#">英特尔产品</a></li>
+                       <li><a href="#">服务</a></li>
+                       <li><a href="#">购买</a></li>
+                       <li><a href="#">产品支持</a></li>
+                       <li><a href="#">关于英特尔</a></li>
+                   </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">简体中文</a></li>
+                <li><a href="#">登录</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group has-feedback">
+                    <label for="kw" class="sr-only">搜索关键字:</label>
+                    <input type="text" class="form-control" id="kw"/>
+                    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                </div>
+            </form>
+            <!--右侧文件-->
+            <span class="navbar-text navbar-right hidden-xs">|</span>
+            <!--右侧超链接-->
+            <a href="#" class="navbar-link navbar-text navbar-right">查找内容</a>
+        </div>
+    </div>
+</div>
+<!--主体  -->
+<div class="mymain">
+    <div class="container">
+         <div class="row">
+             <div class="col-xs-12">
+                 <h3>欢迎来到英特尔©</h3>
+             </div>
+         </div>
+        <div class="row">
+            <div class="col-lg-8 col-xs-12">
+                <div class="mybox">
+                    <img src="img/intel.web.864.486.1.jpg"  alt="">
+                    <div class="my-caption">
+                        <h3>第五代CPU</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur debitis dolore earum et expedita fuga, hic natus nihil nulla numquam quos velit voluptatum. Consectetur distinctio inventore necessitatibus nesciunt sunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque cum deserunt dolore dolores, error esse exercitationem fugit ipsam magnam maxime molestiae molestias necessitatibus nesciunt placeat quia quo sunt? Similique.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-xs-12">
+                <div class="row">
+                    <div class=" col-lg-12 col-xs-6">
+                        <div class="mybox">
+                            <img src="img/intel.web.368.207.1.jpg"/>
+                            <div class="my-caption">
+                                <h3>第五代CPU</h3>
+                                <p>loremLorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur distinctio dolorum exercitationem.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-12 col-xs-6">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <img src="img/intel.web.81.108.png" alt="">
+                            </div>
+                            <div class="col-xs-8">
+                                <ul class="list-group">
+                                    <li class="list-group-item">英特尔酷睿M处理器</li>
+                                    <li class="list-group-item">s神奇的实感技术</li>
+                                    <li class="list-group-item">英特尔凌动处理器</li>
+                                    <li class="list-group-item">2015太笨国际电脑展</li>
+                                    <li class="list-group-item">风暴英雄游戏道具兑换</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-xs-12 col-lg-push-4">
+                <div class="mybox">
+                    <img src="img/intel.web.864.486.2.jpg" alt="">
+                    <div class="my-caption">
+                        <h3>第五代CPU</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorem esse magnam officiis recusandae reprehenderit repudiandae rerum ullam unde veritatis. Adipisci deleniti possimus quod sapiente soluta vero voluptate! Facere, nobis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium autem culpa debitis ea eaque eius, harum in magni, maxime molestiae nostrum nulla obcaecati quam ratione velit, vero voluptate voluptatum?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xs-12 col-lg-pull-8">
+                <div class="row">
+                    <div class=" col-lg-12 col-xs-6">
+                        <div class="mybox">
+                            <img src="img/intel.web.368.207.2.jpg"/>
+                            <div class="my-caption">
+                                <h3>第五代CPU</h3>
+                                <p>loremLorem ipsum dolor sit amet, consectetur adipisicing elit. Enim explicabo fuga iure minus ullam! </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-12 col-xs-6">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <img src="img/intel.web.81.108.png" alt="">
+                            </div>
+                            <div class="col-xs-8">
+                                <ul class="list-group">
+                                    <li class="list-group-item">英特尔酷睿M处理器</li>
+                                    <li class="list-group-item">s神奇的实感技术</li>
+                                    <li class="list-group-item">英特尔凌动处理器</li>
+                                    <li class="list-group-item">2015太笨国际电脑展</li>
+                                    <li class="list-group-item">风暴英雄游戏道具兑换</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-xs-12">
+                <div class="mybox">
+                    <img src="img/intel.web.864.486.3.jpg" alt="">
+                    <div class="my-caption">
+                        <h3>第五代CPU</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, asperiores consequuntur impedit itaque obcaecati praesentium repudiandae. Autem debitis harum hic ipsum laboriosam maiores, mollitia ut! A aspernatur consequuntur culpa. Ratione?Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, atque beatae commodi debitis dicta expedita harum illum iure neque nobis optio possimus quaerat quasi quod quos rem sapiente soluta voluptatum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xs-12">
+                <div class="row">
+                    <div class=" col-lg-12 col-xs-6">
+                        <div class="mybox">
+                            <img src="img/intel.web.368.207.2.jpg"/>
+                            <div class="my-caption">
+                                <h3>第五代CPU</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet ipsa vero. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-12 col-xs-6">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <img src="img/intel.web.81.108.png" alt="">
+                            </div>
+                            <div class="col-xs-8">
+                                <ul class="list-group">
+                                    <li class="list-group-item">英特尔酷睿M处理器</li>
+                                    <li class="list-group-item">s神奇的实感技术</li>
+                                    <li class="list-group-item">英特尔凌动处理器</li>
+                                    <li class="list-group-item">2015太笨国际电脑展</li>
+                                    <li class="list-group-item">风暴英雄游戏道具兑换</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部导航  -->
+<div class="container">
+	<div class="row">
+     <div class="col-xs-12 col-sm-6 col-md-3">
+       <h4>关于英特尔</h4>
+       <ul class="list-unstyled">
+         <li><a href="#">公司信息</a></li>
+         <li><a href="#">投资者关系</a></li>
+         <li><a href="#">联系我们</a></li>
+         <li><a href="#">新闻发布室</a></li>
+         <li><a href="#">网站地图</a></li>
+         <li><a href="#">工作</a></li>
+       </ul>
+     </div>
+     <div class="col-xs-12 col-sm-6 col-md-3">
+       <h4>支持</h4>
+       <ul>
+         <li><a href="#">联系我们</a></li>
+         <li><a href="#">新闻发布室</a></li>
+         <li><a href="#">网站地图</a></li>
+         <li><a href="#">工作</a></li>
+       </ul>
+     </div>
+     <div class="col-xs-12 col-sm-6 col-md-3">
+       <h4>法律声明</h4>
+       <ul>
+         <li><a href="#">联系我们</a></li>
+         <li><a href="#">新闻发布室</a></li>
+         <li><a href="#">网站地图</a></li>
+         <li><a href="#">工作</a></li>
+       </ul>
+     </div>
+     <div class="col-xs-12 col-sm-6 col-md-3">
+       <h4>社交</h4>
+       <ul>
+         <li><a href="#">联系我们</a></li>
+         <li><a href="#">新闻发布室</a></li>
+         <li><a href="#">网站地图</a></li>
+         <li><a href="#">工作</a></li>
+       </ul>
+     </div>
+  </div>
+</div>
+
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootlint.js"></script>
+<script>
+//    bootlint.showLintReportForCurrentDocument([]);
+    $(".row ").on("mouseover","img",e=>{
+        var img=$(e.target);
+        img.next().css("bottom",0);
+    }).on("mouseleave","img",e=>{
+        var img=$(e.target);
+        img.next().css("bottom","-60px");
+    })
+</script>
+</body>
+</html>
